@@ -1,8 +1,0 @@
-SyncFolder object created
-Source path: C:\Users\user\Desktop\source
-Replica path: C:\Users\user\Desktop\replica
-Sync interval: 60
-Log path: C:\Users\user\Desktop\log.txt
-SyncFolder started
-Syncing folders...
-Folders synced
