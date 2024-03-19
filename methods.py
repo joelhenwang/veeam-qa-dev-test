@@ -37,7 +37,6 @@ def sync_folders (src_path, replica_path, log_file_path):
     #     except(f'Source folder {src_path} does not exist')
         
     src_files = os.listdir(src_path)
-    print(f'Source files: {src_files}')
 
 
     # Get list of files and folders in replica folder
@@ -47,18 +46,13 @@ def sync_folders (src_path, replica_path, log_file_path):
         logging.info(f'Replica folder not detected. Creating {replica_path} folder')
     
     replica_files = os.listdir(replica_path)
-    print(f'Replica files: {replica_files}')
 
 
     for file in src_files:
         try:
             file_src_path = os.path.join(src_path, file)
             file_replica_path = os.path.join(replica_path, file)
-            print()
             print(f'File: {file}')
-            print(f'File src path: {file_src_path}')
-            print(f'File replica path: {file_replica_path}')
-            
             # If file is a folder
             if os.path.isdir(file_src_path):
                 # If the folder is not in the replica tree, duplicate it
@@ -95,13 +89,16 @@ def sync_folders (src_path, replica_path, log_file_path):
     # delete it from the replica tree
     for file in replica_files:
         if file not in src_files:
+            print(f'File: {file}')
             try:
                 file_replica_path = os.path.join(replica_path, file)
-                
-                if os.path.isdir(file):
-                    shutil.rmtree(file_replica_path, ignore_errors=True)
+                print(f'path: {file_replica_path}')
+                if os.path.isdir(file_replica_path):
+                    print(f'Folder: {file}')
+                    shutil.rmtree(file_replica_path)
                     logging.info(f'Folder {file} deleted')
                 else:
+                    print(f'File: {file}')
                     pathlib.Path(file_replica_path).unlink()
                     logging.info(f'File {file} deleted')
             except Exception as e:

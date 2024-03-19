@@ -11,3 +11,25 @@
 [19-03-24 22:44:12] - [ERROR]: Error: [Errno 1] Operation not permitted: '/Users/joelwang/Devs/veeam-qa-test/replica/todeleteFolder'
 [19-03-24 22:55:58] - [ERROR]: Error: [Errno 1] Operation not permitted: '/Users/joelwang/Devs/veeam-qa-test/replica/todeleteFolder'
 [19-03-24 22:56:14] - [ERROR]: Error: [Errno 1] Operation not permitted: '/Users/joelwang/Devs/veeam-qa-test/replica/todeleteFolder'
+[19-03-24 23:09:00] - [INFO]: Folder folder2 copied
+[19-03-24 23:09:00] - [INFO]: File test2 copied
+[19-03-24 23:09:00] - [INFO]: File test1 copied
+[19-03-24 23:09:00] - [INFO]: Folder folder1 copied
+[19-03-24 23:09:00] - [INFO]: File todelete1 deleted
+[19-03-24 23:09:00] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
+[19-03-24 23:09:05] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
+[19-03-24 23:16:03] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
+[19-03-24 23:16:08] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
+[19-03-24 23:16:13] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
+[19-03-24 23:22:15] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
+[19-03-24 23:25:04] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
+[19-03-24 23:28:06] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
+[19-03-24 23:28:23] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
+[19-03-24 23:28:28] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
+[19-03-24 23:30:34] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
+[19-03-24 23:30:54] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
+[19-03-24 23:31:27] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
+[19-03-24 23:34:54] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
+[19-03-24 23:35:40] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
+[19-03-24 23:36:11] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
+[19-03-24 23:38:32] - [INFO]: Folder todeletefolder deleted
