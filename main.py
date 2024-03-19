@@ -1,6 +1,5 @@
 import argparse
-import logging
-import os
+from methods import sync
 
 if __name__ == '__main__':
     # Parse command line arguments
@@ -21,4 +20,4 @@ if __name__ == '__main__':
     # Parse arguments
     args = parser.parse_args()
 
-    sync_folders(args.source, args.replica, args.log_file, args.time_interval)
+    sync(args.source, args.replica, args.log_file_path, args.sync_interval)
