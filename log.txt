@@ -1,35 +1,15 @@
-[19-03-24 22:23:18] - [ERROR]: Error: [Errno 1] Operation not permitted: '/Users/joelwang/Devs/veeam-qa-test/replica/todeleteFolder'
-[19-03-24 22:25:06] - [ERROR]: Error: [Errno 1] Operation not permitted: '/Users/joelwang/Devs/veeam-qa-test/replica/todeleteFolder'
-[19-03-24 22:30:53] - [ERROR]: Error: [Errno 1] Operation not permitted: '/Users/joelwang/Devs/veeam-qa-test/replica/todeleteFolder'
-[19-03-24 22:31:00] - [ERROR]: Error: [Errno 1] Operation not permitted: '/Users/joelwang/Devs/veeam-qa-test/replica/todeleteFolder'
-[19-03-24 22:31:56] - [ERROR]: Error: [Errno 1] Operation not permitted: '/Users/joelwang/Devs/veeam-qa-test/replica/todeleteFolder'
-[19-03-24 22:37:37] - [ERROR]: Error: [Errno 1] Operation not permitted: '/Users/joelwang/Devs/veeam-qa-test/replica/todeleteFolder'
-[19-03-24 22:37:51] - [ERROR]: Error: [Errno 1] Operation not permitted: '/Users/joelwang/Devs/veeam-qa-test/replica/todeleteFolder'
-[19-03-24 22:40:06] - [ERROR]: Error: [Errno 1] Operation not permitted: '/Users/joelwang/Devs/veeam-qa-test/replica/todeleteFolder'
-[19-03-24 22:43:52] - [ERROR]: Error: [Errno 1] Operation not permitted: '/Users/joelwang/Devs/veeam-qa-test/replica/todeleteFolder'
-[19-03-24 22:44:02] - [ERROR]: Error: [Errno 1] Operation not permitted: '/Users/joelwang/Devs/veeam-qa-test/replica/todeleteFolder'
-[19-03-24 22:44:12] - [ERROR]: Error: [Errno 1] Operation not permitted: '/Users/joelwang/Devs/veeam-qa-test/replica/todeleteFolder'
-[19-03-24 22:55:58] - [ERROR]: Error: [Errno 1] Operation not permitted: '/Users/joelwang/Devs/veeam-qa-test/replica/todeleteFolder'
-[19-03-24 22:56:14] - [ERROR]: Error: [Errno 1] Operation not permitted: '/Users/joelwang/Devs/veeam-qa-test/replica/todeleteFolder'
-[19-03-24 23:09:00] - [INFO]: Folder folder2 copied
-[19-03-24 23:09:00] - [INFO]: File test2 copied
-[19-03-24 23:09:00] - [INFO]: File test1 copied
-[19-03-24 23:09:00] - [INFO]: Folder folder1 copied
-[19-03-24 23:09:00] - [INFO]: File todelete1 deleted
-[19-03-24 23:09:00] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
-[19-03-24 23:09:05] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
-[19-03-24 23:16:03] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
-[19-03-24 23:16:08] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
-[19-03-24 23:16:13] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
-[19-03-24 23:22:15] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
-[19-03-24 23:25:04] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
-[19-03-24 23:28:06] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
-[19-03-24 23:28:23] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
-[19-03-24 23:28:28] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
-[19-03-24 23:30:34] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
-[19-03-24 23:30:54] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
-[19-03-24 23:31:27] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
-[19-03-24 23:34:54] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
-[19-03-24 23:35:40] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
-[19-03-24 23:36:11] - [ERROR]: Error: [Errno 21] Is a directory: '/home/parallels/Desktop/veeam-qa/replica/todeletefolder'
-[19-03-24 23:38:32] - [INFO]: Folder todeletefolder deleted
+[20-03-24 14:15:25] - [INFO]: Initializing folder synchronization process...
+[20-03-24 14:15:25] - [INFO]: Source folder: "/Users/joelwang/Devs/veeam-qa-test/source"
+[20-03-24 14:15:25] - [INFO]: Replica folder: "/Users/joelwang/Devs/veeam-qa-test/replica"
+[20-03-24 14:15:25] - [INFO]: Replica folder not detected. Creating "/Users/joelwang/Devs/veeam-qa-test/replica" folder
+[20-03-24 14:15:25] - [INFO]: Subfolder "/Users/joelwang/Devs/veeam-qa-test/source/folder2" copied to replica
+[20-03-24 14:15:25] - [INFO]: "/Users/joelwang/Devs/veeam-qa-test/source/test1" copied to replica
+[20-03-24 14:15:25] - [INFO]: Subfolder "/Users/joelwang/Devs/veeam-qa-test/source/folder1" copied to replica
+[20-03-24 14:15:25] - [INFO]: "/Users/joelwang/Devs/veeam-qa-test/source/test2" copied to replica
+[20-03-24 14:20:25] - [INFO]: INITIALIZING folder synchronization process...
+[20-03-24 14:20:25] - [INFO]: SOURCE folder: "/Users/joelwang/Devs/veeam-qa-test/source"
+[20-03-24 14:20:25] - [INFO]: REPLICA folder: "/Users/joelwang/Devs/veeam-qa-test/replica"
+[20-03-24 14:20:25] - [INFO]: SUBFOLDER "/Users/joelwang/Devs/veeam-qa-test/source/folder1/ffolder112" copied to REPLICA
+[20-03-24 14:20:25] - [INFO]: SUBFOLDER "/Users/joelwang/Devs/veeam-qa-test/replica/folder1/todelete1" deleted.
+[20-03-24 14:20:25] - [INFO]: FILE "/Users/joelwang/Devs/veeam-qa-test/replica/folder1/todelete2" deleted.
+[20-03-24 14:20:25] - [INFO]: SUBFOLDER "/Users/joelwang/Devs/veeam-qa-test/replica/todelete" deleted.

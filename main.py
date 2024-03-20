@@ -1,5 +1,5 @@
 import argparse
-from methods import sync
+from methods import init_sync
 
 if __name__ == '__main__':
     # Parse command line arguments
@@ -20,4 +20,4 @@ if __name__ == '__main__':
     # Parse arguments
     args = parser.parse_args()
 
-    sync(args.source, args.replica, args.log_file_path, args.sync_interval)
+    init_sync(args.source, args.replica, args.log_file_path, args.sync_interval)
