@@ -29,8 +29,8 @@ def init_sync(src_path, replica_path, log_file_path, sync_interval):
     
     # Start the synchronization loop
     logging.info('INITIALIZING folder synchronization process...')
-    logging.info(f'SOURCE folder: "{src_path}"')
-    logging.info(f'REPLICA folder: "{replica_path}"')
+    logging.info(f'SOURCE folder path: "{src_path}"')
+    logging.info(f'REPLICA folder path: "{replica_path}"\n')
 
     while True:
         sync_folders(src_path, replica_path, log_file_path)
