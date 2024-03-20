@@ -20,4 +20,5 @@ if __name__ == '__main__':
     # Parse arguments
     args = parser.parse_args()
 
+    # Start the synchronization process
     init_sync(args.source, args.replica, args.log_file_path, args.sync_interval)

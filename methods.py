@@ -7,7 +7,20 @@ import os
 
 def init_sync(src_path, replica_path, log_file_path, sync_interval):
     """ 
-    Sync every sync_interval seconds 
+    One way folder synchronization every 'sync_interval' seconds
+
+    Args:
+    src_path (str): Source folder path
+    replica_path (str): Replica folder path
+    log_file_path (str): Log file path
+    sync_interval (int): Synchronization interval in seconds
+
+    Description:
+    The function synchronizes the source folder with the replica folder every 'sync_interval' seconds.
+    The synchronization process copies new files and folders from the source folder to the replica folder
+    if they're non-existent in the replica folder.
+    If a file is modified in the source folder, the file in the replica folder will be overwritten by the newer file.
+    If a file or folder is deleted from the source folder, it will be deleted from the replica folder.
 
     """
     
@@ -18,6 +31,7 @@ def init_sync(src_path, replica_path, log_file_path, sync_interval):
     logging.info('INITIALIZING folder synchronization process...')
     logging.info(f'SOURCE folder: "{src_path}"')
     logging.info(f'REPLICA folder: "{replica_path}"')
+
     while True:
         sync_folders(src_path, replica_path, log_file_path)
         time.sleep(sync_interval)
@@ -25,6 +39,18 @@ def init_sync(src_path, replica_path, log_file_path, sync_interval):
     
 
 def config_logger (log_file):
+    """
+    Configure the logger
+
+    Args:
+    log_file (str): Log file path
+
+    Description:
+    The function configures the logger to log messages to a file and to the console.
+    Logs messages with the following format:
+    [DD/MM/YY HH:MM:SS] - [LEVEL]: 'MESSAGE'
+
+    """
 
     log_formatter = logging.Formatter('[%(asctime)s] - [%(levelname)s]: %(message)s', 
                                   datefmt='%d/%m/%y %H:%M:%S')
@@ -46,9 +72,6 @@ def config_logger (log_file):
     
 
 def sync_folders (src_path, replica_path, log_file_path):
-    """
-    Synchronize the source folder with the replica folder
-    """
 
     # Get list of files and folders in source folder
     if not os.path.isdir(src_path):
@@ -124,7 +147,21 @@ def sync_folders (src_path, replica_path, log_file_path):
  
 
 def equal_checksums(src_path, replica_path):
-    """ Compare the checksums of two files """
+    """ 
+    Compare the checksums of two files 
+
+    Args:
+    src_path (str): Source file path
+    replica_path (str): Replica file path
+
+    Returns:
+    bool: True if the checksums are equal, False otherwise
+
+    Description:
+    The function compares the checksums of the source file and the replica file.
+    If the checksums are equal, the function returns True. Otherwise, it returns False.
+
+    """
     with open(src_path, "rb") as f1, open(replica_path, "rb") as f2:
         return hashlib.sha256(f1.read()).hexdigest() == hashlib.sha256(f2.read()).hexdigest()
     
