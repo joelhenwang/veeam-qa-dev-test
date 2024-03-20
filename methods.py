@@ -25,6 +25,10 @@ def init_sync(src_path, replica_path, log_file_path, sync_interval):
     
 
 def config_logger (log_file):
+
+    log_formatter = logging.Formatter('[%(asctime)s] - [%(levelname)s]: %(message)s', 
+                                  datefmt='%d/%m/%y %H:%M:%S')
+
     # Set up logging config
     logging.basicConfig(filename=log_file, 
                         filemode='a',
@@ -32,8 +36,9 @@ def config_logger (log_file):
                         datefmt='%d-%m-%y %H:%M:%S',
                         format='[%(asctime)s] - [%(levelname)s]: %(message)s')
     
-    # Create a console handler and set level to info
+    # Set a stream handler and set level to info
     console = logging.StreamHandler()
+    console.setFormatter(log_formatter)
     console.setLevel(logging.INFO)
 
     # Add the handler to root logger
@@ -73,7 +78,7 @@ def sync_folders (src_path, replica_path, log_file_path):
                 # If the folder is not in the replica tree, duplicate it
                 # Else, recursively call the function to synchronize the subfolders
                 if file not in replica_files:
-                    shutil.copytree(file_src_path, file_replica_path, symlinks=True)
+                    shutil.copytree(file_src_path, file_replica_path, symlinks=True, dirs_exist_ok=True)
                     logging.info(f'SUBFOLDER "{file_src_path}" copied to REPLICA')
                 else:
                     src_subfolder_path = os.path.join(src_path, file)

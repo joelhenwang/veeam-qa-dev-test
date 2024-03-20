@@ -13,3 +13,17 @@
 [20-03-24 14:20:25] - [INFO]: SUBFOLDER "/Users/joelwang/Devs/veeam-qa-test/replica/folder1/todelete1" deleted.
 [20-03-24 14:20:25] - [INFO]: FILE "/Users/joelwang/Devs/veeam-qa-test/replica/folder1/todelete2" deleted.
 [20-03-24 14:20:25] - [INFO]: SUBFOLDER "/Users/joelwang/Devs/veeam-qa-test/replica/todelete" deleted.
+[20-03-24 18:14:16] - [INFO]: INITIALIZING folder synchronization process...
+[20-03-24 18:14:16] - [INFO]: SOURCE folder: "/Users/joelwang/Devs/veeam-qa-test/source"
+[20-03-24 18:14:16] - [INFO]: REPLICA folder: "/Users/joelwang/Devs/veeam-qa-test/replica"
+[20-03-24 18:14:16] - [INFO]: REPLICA folder not detected. Creating "/Users/joelwang/Devs/veeam-qa-test/replica" folder
+[20-03-24 18:14:16] - [INFO]: SUBFOLDER "/Users/joelwang/Devs/veeam-qa-test/source/folder2" copied to REPLICA
+[20-03-24 18:14:16] - [INFO]: FILE "/Users/joelwang/Devs/veeam-qa-test/source/test1" copied to REPLICA
+[20-03-24 18:14:16] - [INFO]: SUBFOLDER "/Users/joelwang/Devs/veeam-qa-test/source/folder1" copied to REPLICA
+[20-03-24 18:14:16] - [INFO]: FILE "/Users/joelwang/Devs/veeam-qa-test/source/test2" copied to REPLICA
+[20-03-24 18:14:36] - [INFO]: Detected changes in FILE "/Users/joelwang/Devs/veeam-qa-test/source/folder1/ffolder112/testtest". Copying file to REPLICA
+[20-03-24 18:14:56] - [INFO]: FILE "/Users/joelwang/Devs/veeam-qa-test/replica/delete this" deleted.
+[20-03-24 18:15:07] - [INFO]: SUBFOLDER "/Users/joelwang/Devs/veeam-qa-test/replica/folder1/ffolder112/todelete" deleted.
+[20-03-24 19:11:12] - [INFO]: INITIALIZING folder synchronization process...
+[20-03-24 19:11:12] - [INFO]: SOURCE folder: "/Users/joelwang/Devs/veeam-qa-test/source"
+[20-03-24 19:11:12] - [INFO]: REPLICA folder: "/Users/joelwang/Devs/veeam-qa-test/replica"
