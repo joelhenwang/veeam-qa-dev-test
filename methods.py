@@ -33,7 +33,7 @@ def config_logger (log_file):
     logging.basicConfig(filename=log_file, 
                         filemode='a',
                         level=logging.INFO, 
-                        datefmt='%d-%m-%y %H:%M:%S',
+                        datefmt='%d/%m/%y %H:%M:%S',
                         format='[%(asctime)s] - [%(levelname)s]: %(message)s')
     
     # Set a stream handler and set level to info
